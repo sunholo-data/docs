@@ -1,0 +1,247 @@
+---
+title: "LLMOps on <br/> Google Cloud Platform"
+title-slide-attributes:
+    data-background-image: img/sunholo-sanne.jpg
+    data-background-size: 700px
+    data-background-opacity: "1"
+    data-background-position: "top center"
+    data-id: "logo"
+author: "Mark Edmondson"
+format:
+    revealjs:
+        theme: custom.scss
+        transition: slide
+        background-transition: fade
+        logo: img/sunholo-sanne.jpg
+        footer: "Sunholo - LLMOps on Google Cloud Platform - Nov 2023"
+#number-sections: true
+---
+
+# Agenda
+
+1. The Sunholo Team
+1. Define LLMOps
+1. Enabling LLMOps on GCP
+
+# The Sunholo Team
+
+## Mark Edmondson - Founder
+
+- Founder of Sunholo ApS from Nov 1st, 2023
+- Google Developer Expert - Google Cloud since 2015
+- MSci Physics, Kings College London
+- Wrote an O'Reilly book on Google Analytics 4 and Google Cloud integrations
+
+![](img/me_headshot.jpg)
+
+## code.markedmondson.me
+
+![](img/my-blog.png)
+
+## {background-image="img/llm-architecture-gcp.png" background-size="1500px" data-id="llm-architecture-gcp"}
+
+
+
+
+## Electric Sheep - Company Brain
+
+- An LLM bot, prototyped in the blog post. 
+- Evolved into main executor agent
+- Infinite memory
+- Langchain Retrieval Augmented Generation (RAG) bot
+
+![](img/greenhand.png)
+
+## Conversations with a bot
+
+![](img/electric-sheep-demo.png)
+
+## Voight-Kampff - Junior Developer
+
+- Writes and executes code based on prompts
+- Uses same GCP infrastructure as Electric Sheep
+- Interacts with other bots
+- openinterpreter.com bot
+
+![](img/voight-kampff.png)
+
+## Watching a bot code
+
+![](img/voight-kampff-demo.png)
+
+## An army of bots {background-image="img/bot-army.png" background-opacity="0.2"}
+
+Sunholo aims to be a post-LLM company
+
+- Custom bots for each business function
+- Agents running in private secure environments
+- Private data mainly interacted with via LLMs
+
+
+# Define LLMOps
+
+## LLMOps for Mark means...
+
+![](img/my-llm-stack.png){.absolute top=100 left=0 width="800"}
+
+## {background-image="img/Sunholo%20LLMOps%20Cloud%20Architecture.png" background-size="1000px" data-id="llmopsv3"}
+
+## What tech does LLMOps use?
+
+LLMOps builds on top of DataOps and MLOps, but with extra requirements such as...
+
+1. Parsing inputs
+2. Cognition (MLOps can help here)
+3. Document store (DataOps can help here)
+4. Vectorstore embeddings
+
+## {transition="fade" background-image="img/prompt.png" background-opacity="0.1"}
+
+1. Parsing input
+    - LLM rephrasing
+    - Image/Text/Audio
+    - Prompt engineering
+
+## 1. Parsing input {transition="fade"}
+
+![](img/prompt.png)
+
+## {transition="fade" background-image="img/cognition.png" background-opacity="0.1"}
+
+2. The model
+    - Cognition 
+    - Tailoring size of model to task
+    - Finetuning (MLOps)
+
+## 2. Cognition {transition="fade"}
+
+![](img/cognition.png)
+
+## {transition="fade" background-image="img/dataops.webp" background-opacity="0.1"}
+
+3. Document store
+    - Source of truth
+    - Data pipelines (DataOps)
+    - Structured data (LLMs writing SQL?)
+    - Unstructured data
+
+## 3. Document store {transition="fade"}
+
+![](img/dataops.webp)
+
+::: aside
+*https://medium.com/data-ops/*
+:::
+
+
+## {transition="fade" background-image="img/vector-embedding.gif" background-opacity="0.1"}
+
+4. Vectorstore embeddings
+    - A new datatype for most companies
+    - New uses beyond LLMs
+    - Embedding type
+    - Chunking
+    - Parsing of documents
+
+## 4. Vectorstore 
+
+![](img/vector-embedding.gif)
+
+# Enabling LLMOps on GCP
+
+## Open source LLM Agents 
+
+* **Langchain** - modular LLM flows
+* **LlamaIndex** - advanced RAG
+* **LiteLLM** - proxy to standardise interacting with all LLMs, local and API based
+* **Unstrucutured** - easy parsing of documents to chunks
+* **Autogen** - Multiple agents talking to one another
+* **OpenInterpreter** - Agent executing its own code
+
+## LLMOps for Electric Sheep
+
+- Retrieval augmented generation (RAG)
+- Documentation is the new oil
+- All Sunholo documents, git repos, emails, notes, conversations, R&D etc.
+
+![](img/electric-sheep-demo.png)
+
+## Langchain ConversationalRetrievalChain
+
+![](img/conversationalretrievalchain.webp){width="800px"}
+
+::: aside
+*https://medium.com/@zahidali133*
+:::
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-edmonbrain-start.png){width="1500px"}
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-inputs.png){width="1500px"}
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-edmonbrain-agent.png){width="1500px"}
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-edmonbrain4.png){width="1500px"}
+
+
+## LLMOps for Voight-Kampff
+
+- Using LLMs to create code and scripts it then executes in a virtual environment
+- Non-interactive mode
+- Pick LLM to run locally or via API
+
+![](img/voight-kampff-demo.png)
+
+## {background-iframe="https://openinterpreter.com/"}
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-voight-kampff-start.png){width="1500px"}
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-inputs.png){width="1500px"}
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-voight-kampff-agent.png){width="1500px"}
+
+## {transition="fade"}
+
+![](img/sunholo-llmops-voight-kampff-end.png){width="1500px"}
+
+## Voight-Kampff and post-LLM software engineering
+
+- Executing Code within Docker containers
+- Terraform IaC gives agents superpowers
+- Best practices of GitOps/CI/CD/Testing/Documentation all enable agents
+
+## Voight-Kampff Triggers
+
+- Triggers: 
+    - CI/CD alerts to prompt agent fixing code
+    - Scheduled Code development and refactoring
+    - GitHub issue triage
+- It will build itself, the more systems are in code
+
+
+# Summary {background-image="img/sunholo-sanne.jpg" background-size="700px" background-opacity="1" background-position="100% 10%"}
+
+- This is just the beginning of an LLM revolution
+- post-LLM companies will use multiple agents
+- LLMOps builds on top of DevOps and MLOps
+- Sunholo offers LLMOps for GCP offering to accelerate your own use cases
+
+
+# Thanks {background-image="img/sunholo-sanne.jpg" background-size="700px" background-opacity="1" background-position="100% 10%"}
+
+- Updates soon at sunholo.com
+- mark@sunholo.com
+- linkedin.com/company/sunholo/

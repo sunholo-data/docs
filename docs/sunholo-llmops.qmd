@@ -1,0 +1,38 @@
+---
+title: "Sunholo LLMOps Mission Statement"
+author: Mark Edmondson
+toc: true
+number-sections: true
+format:
+  html:
+    code-fold: true
+---
+
+Sunholo LLMOps is a project to enable Large Language Model (LLM) use cases across all industries and applications. LLMOps is defined as creating the technology and systems needed to deliver Large Language Models apps and services.
+
+## Executive Summary 
+
+The term LLMOps is a new one derived from the more traditional DevOps and MLOps to focus on the differing needs for LLMs to run smoothly and efficiently.
+
+Using Cloud technologies, Sunholo LLMOps provides common components used by various LLM implementations and allows them to scale and enable enterprise features at a low cost. It offers an accelerated path from idea to production, and allows you to experiment with different approaches without having to retool.
+
+LLMs use many well established data components as well as some more specialised tools to help them operate. This includes data flows for structured and unstructured data that already exist such as information retrieval, as well as vector stores, model prototyping, model fine-tuning and prompt management.
+
+## Delivery
+
+Sunholo LLMOps will be available under three different models:
+
+* B2C: An online service where users can pick off-the-shelf LLM services and hook them up to their own personal chat services such as Slack, Google Chat or Discord, all powered by Sunholo LLMOps.
+* B2B: Some of the code for the B2C offering will be available open-source, as well as some proprietary services Sunholo will build on top of it.  One-off and ongoing services will be offered to help deploy and maintain the Sunholo LLMOps platform within your own Google Cloud Platform environment, to accelerate your own LLM use cases to production standard.
+* B2E: Specialised custom implementations will be offered that can build on top of the Sunholo LLMOps platform.
+
+## Technical Specifications
+
+The Sunholo LLMOps platform is designed with these principles in mind:
+
+* Components: A micro-services architecture is employed to enable swapping in and out any components such as LLM model, databases, agent types and more.  Common LLM standards such as chat interfaces, vectorstores, databases, embedding platforms, user history, monitoring, IAM will be able to be shared between the services.
+* Cost-efficient: Serverless technologies will be employed to scale down to 0 when not needed, saving on costs.
+* Scale: Serverless technologies also means scaling up to millions of users will be possible on the same platform.
+* Private: All components can optionally be enclosed in your own Google Cloud Platform VPC network.  No outside 3rd parties will be needed and your own private data will remain guarded.  Local LLM models will be available to use without calling 3rd party APIs.
+
+The platform will initially only be available on Google Cloud Platform, although it will be possible to use within other clouds in the future should the need arise.

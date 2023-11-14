@@ -38,10 +38,6 @@ format:
 
 ![](img/my-blog.png)
 
-## {background-image="img/llm-architecture-gcp.png" background-size="100%" data-id="llm-architecture-gcp"}
-
-
-
 
 ## Electric Sheep - Company Brain
 
@@ -77,14 +73,12 @@ Sunholo aims to be a post-LLM company
 - Agents running in private secure environments
 - Private data mainly interacted with via LLMs
 
-
 # Define LLMOps
 
 ## LLMOps for Mark means...
 
 ![](img/my-llm-stack.png){.absolute top=100 left=0 height="80%"}
 
-## {background-image="img/Sunholo%20LLMOps%20Cloud%20Architecture.png" data-id="llmopsv3" background-size="45%"}
 
 ## What tech does LLMOps use?
 

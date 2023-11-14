@@ -2,7 +2,7 @@
 title: "LLMOps on <br/> Google Cloud Platform"
 title-slide-attributes:
     data-background-image: img/sunholo-sanne.jpg
-    data-background-size: 700px
+    data-background-size: 100%
     data-background-opacity: "1"
     data-background-position: "top center"
     data-id: "logo"
@@ -38,7 +38,7 @@ format:
 
 ![](img/my-blog.png)
 
-## {background-image="img/llm-architecture-gcp.png" background-size="1500px" data-id="llm-architecture-gcp"}
+## {background-image="img/llm-architecture-gcp.png" background-size="100%" data-id="llm-architecture-gcp"}
 
 
 
@@ -82,9 +82,9 @@ Sunholo aims to be a post-LLM company
 
 ## LLMOps for Mark means...
 
-![](img/my-llm-stack.png){.absolute top=100 left=0 width="800"}
+![](img/my-llm-stack.png){.absolute top=100 left=0 height="80%"}
 
-## {background-image="img/Sunholo%20LLMOps%20Cloud%20Architecture.png" background-size="1000px" data-id="llmopsv3"}
+## {background-image="img/Sunholo%20LLMOps%20Cloud%20Architecture.png" data-id="llmopsv3" background-size="45%"}
 
 ## What tech does LLMOps use?
 
@@ -168,7 +168,7 @@ LLMOps builds on top of DataOps and MLOps, but with extra requirements such as..
 
 ## Langchain ConversationalRetrievalChain
 
-![](img/conversationalretrievalchain.webp){width="800px"}
+![](img/conversationalretrievalchain.webp){width="80%"}
 
 ::: aside
 *https://medium.com/@zahidali133*
@@ -176,19 +176,19 @@ LLMOps builds on top of DataOps and MLOps, but with extra requirements such as..
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-edmonbrain-start.png){width="1500px"}
+![](img/sunholo-llmops-edmonbrain-start.png){width="80%"}
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-inputs.png){width="1500px"}
+![](img/sunholo-llmops-inputs.png){width="80%"}
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-edmonbrain-agent.png){width="1500px"}
+![](img/sunholo-llmops-edmonbrain-agent.png){width="80%"}
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-edmonbrain4.png){width="1500px"}
+![](img/sunholo-llmops-edmonbrain4.png){width="80%"}
 
 
 ## LLMOps for Voight-Kampff
@@ -203,19 +203,19 @@ LLMOps builds on top of DataOps and MLOps, but with extra requirements such as..
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-voight-kampff-start.png){width="1500px"}
+![](img/sunholo-llmops-voight-kampff-start.png){width="80%"}
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-inputs.png){width="1500px"}
+![](img/sunholo-llmops-inputs.png){width="80%"}
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-voight-kampff-agent.png){width="1500px"}
+![](img/sunholo-llmops-voight-kampff-agent.png){width="80%"}
 
 ## {transition="fade"}
 
-![](img/sunholo-llmops-voight-kampff-end.png){width="1500px"}
+![](img/sunholo-llmops-voight-kampff-end.png){width="80%"}
 
 ## Voight-Kampff and post-LLM software engineering
 
